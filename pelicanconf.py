@@ -5,10 +5,11 @@ from __future__ import unicode_literals
 AUTHOR = u'Andr\xe9s S\xe1nchez Garc\xeda'
 SITENAME = u'SysAdmin Blog!'
 SITEURL = ''
+GITHUB_URL = 'http://github.com/asg1612'
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Madrid'
 
 DEFAULT_LANG = u'es'
 
@@ -24,8 +25,9 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', 'https://twitter.com/asg1612'),
+		 ('linkedin', 'https://www.linkedin.com/profile/view?id=23101412'),
+		       ('github', GITHUB_URL),)
 
 DEFAULT_PAGINATION = 10
 
