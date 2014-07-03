@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SysAdmin Blog!</title><link href="/" rel="alternate"></link><link href="/feeds/chuck-norris.atom.xml" rel="self"></link><id>/</id><updated>2014-07-02T23:06:00+02:00</updated><entry><title>Hola Mundo</title><link href="/hola-mundo.html" rel="alternate"></link><updated>2014-07-02T23:06:00+02:00</updated><author><name>Chuck Norris</name></author><id>tag:,2014-07-02:hola-mundo.html</id><summary type="html">&lt;p&gt;This is our first post!! A classic&lt;/p&gt;
-&lt;p&gt;.. code-block:: python&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;See you soon ;)&lt;/p&gt;</summary><category term="helloworld"></category><category term="blog"></category><category term="first"></category></entry></feed>
