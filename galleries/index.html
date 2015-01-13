@@ -2,27 +2,36 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
     <head>
     <meta charset="utf-8">
-    <meta name="description" content="Sysadmin of bits and bees">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bits and Bees | Bits and Bees</title>
+    <title>galleries | Bits and Bees</title>
 
     
-            <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+            <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 
     
-            <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 
-      <link rel="canonical" href="http://andressaga.es/index.html">
+      <link rel="canonical" href="http://andressaga.es/galleries/index.html">
 
 
 
 
     
-        <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
 
     
 
 
+
+
+<style type="text/css">
+    .image-block {
+        display: inline-block;
+    }
+    .flowr_row {
+        width: 100%;
+    }
+    </style>
 
 
 </head>
@@ -51,13 +60,13 @@
             <ul class="nav navbar-nav">
                 
                 <li>
-<a href="archive.html">Archivo</a>
+<a href="../archive.html">Archivo</a>
                 </li>
 <li>
-<a href="categories/index.html">Tags</a>
+<a href="../categories/index.html">Tags</a>
                 </li>
 <li>
-<a href="rss.xml">feed RSS</a>
+<a href="../rss.xml">feed RSS</a>
 
                 
             </li>
@@ -83,33 +92,16 @@
         <div class="row">
             
             
-<div class="postindex">
-    <article class="h-entry post-text">
-    <header>
-        <h1 class="p-name entry-title"><a href="posts/spamassassin.html" class="u-url">Spamassassin</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">Andrés Sánchez García</span></p>
-            <p class="dateline"><a href="posts/spamassassin.html" rel="bookmark"><time class="published dt-published" datetime="2015-01-13T11:40:01+01:00" itemprop="datePublished" title="2015-01-13 11:40">2015-01-13 11:40</time></a></p>
-                <p class="commentline">
-        
+    
+<nav class="breadcrumbs">
+<ul class="breadcrumb">
+        <li><a href="#">galleries</a></li>
+</ul>
+</nav>
 
+    <h1>galleries</h1>
 
-        </p>
-</div>
-    </header>
-    <div class="e-content entry-content">
-    <p>Write your post here.</p>
-    </div>
-    </article>
-</div>
-
-
-
-        
-
-
-
-
+<div id="gallery_container"></div>
 
         </div>
         <!--End of body content-->
@@ -122,8 +114,8 @@
 </div>
 
 
-            <script src="assets/js/all-nocdn.js"></script>
-        <script src="assets/js/colorbox-i18n/jquery.colorbox-es.js"></script>
+            <script src="../assets/js/all-nocdn.js"></script>
+        <script src="../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script>
     
 <!-- Social buttons -->
 <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
@@ -155,6 +147,45 @@
     </script>
     <!-- end fancy dates -->
     
+<script src="../assets/js/flowr.plugin.js"></script>
+<script>
+jsonContent = [];
+$("#gallery_container").flowr({
+        data : jsonContent,
+        height : 180*.6,
+        padding: 5,
+        rows: -1,
+        render : function(params) {
+            // Just return a div, string or a dom object, anything works fine
+            img = $("<img />").attr({
+                'src': params.itemData.url_thumb,
+                'width' : params.width,
+                'height' : params.height
+            }).css('max-width', '100%');
+            link = $( "<a></a>").attr({
+                'href': params.itemData.url,
+                'class': 'image-reference'
+            });
+            div = $("<div />").addClass('image-block').attr({
+                'title': params.itemData.title,
+                'data-toggle': "tooltip",
+            });
+            link.append(img);
+            div.append(link);
+            div.hover(div.tooltip());
+            return div;
+        },
+        itemWidth : function(data) { return data.size.w; },
+        itemHeight : function(data) { return data.size.h; },
+        complete : function(params) {
+            if( jsonContent.length > params.renderedItems ) {
+                nextRenderList = jsonContent.slice( params.renderedItems );
+            }
+        }
+    });
+$("a.image-reference").colorbox({rel:"gal", maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+</script>
+
 
 
 </body>
