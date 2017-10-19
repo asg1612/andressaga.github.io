@@ -1,0 +1,60 @@
+baseURL = "http://andressaga.es/"
+languageCode = "es-es"
+title = "Otro blog mas"
+theme = "hugo-geo"
+relativeURLs = false
+paginate = 5
+publishDir = "docs"
+
+[taxonomies]
+	tag = "tags"
+	tutorial = "tutorials"
+
+[params]
+  # Render the rotating globe in the sidebar
+  showglobe = true
+
+  # Include favicon
+  favicon = "favicon.ico"
+
+  # Google Analytics
+  analytics = "52491226"
+
+  # Email (optional)
+  email = "asg1612@gmail.com"
+
+  # Header Title for the main page
+  header = "What I'm Thinking"
+
+  # Sidebar profile picture
+  profilepic = "img/smugmug.jpg"
+
+  # Title/subtitle for the sidebar
+  title = "ANDRES SANCHEZ GARCIA"
+  subtitle = "DEVOPS"
+
+    # Social buttons for sidebar
+  	# Each of these are optional
+  	[[params.socialbuttons]]
+  	faicon = "github"
+  	url = "https://github.com/asg1612"
+  	[[params.socialbuttons]]
+  	faicon = "twitter"
+  	url = "https://twitter.com/asg1612"
+  	[[params.socialbuttons]]
+  	faicon = "linkedin"
+  	url = "https://linkedin.com/in/asg1612"
+
+
+  	# Nav links below the profile picture
+  	[[params.navlinks]]
+  	name = "About"
+  	url = "about/"
+
+  	[[params.navlinks]]
+  	name = "Blog"
+  	url = "posts/"
+
+  	[[params.navlinks]]
+  	name = "Tutoriales"
+  	url = "tutorial/"
