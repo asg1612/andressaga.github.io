@@ -27,7 +27,7 @@ publishDir = "docs"
   header = "What I'm Thinking"
 
   # Sidebar profile picture
-  profilepic = "img/smugmug.jpg"
+  profilepic = "img/avatar.png"
 
   # Title/subtitle for the sidebar
   title = "ANDRES SANCHEZ GARCIA"
