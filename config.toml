@@ -1,60 +1,39 @@
 baseURL = "http://andressaga.es/"
 languageCode = "es-es"
+author = "Andrés Sáncher García"
 title = "Otro blog mas"
-theme = "hugo-geo"
-relativeURLs = false
-paginate = 5
-publishDir = "docs"
+theme = "hugo-goa"
 
-[taxonomies]
-	tag = "tags"
-	tutorial = "tutorials"
+publishDir = "docs"
+googleAnalytics = "52491226"
+
 
 [params]
-  # Render the rotating globe in the sidebar
-  showglobe = true
+	author = "Andrés Sáncher García"
+  intro = "DevOps"
+	description = "Trabajando en Sacyl, migrando a una infraestructura como código :-P"
+	authorimage = "avatar.png"
+	dateformat = "Jan 2, 2006"
+[params.meta]
+	description = "devops infraestrutura como código"
+	keywords = "devops,IAC,python,golang,docker,rancher"
 
-  # Include favicon
-  favicon = "favicon.ico"
-
-  # Google Analytics
-  analytics = "52491226"
-
-  # Email (optional)
+[params.social]
+	github = "asg1612"
+  twitter = "asg1612"
+  linkedin = "asg1612"
   email = "asg1612@gmail.com"
 
-  # Header Title for the main page
-  header = "What I'm Thinking"
 
-  # Sidebar profile picture
-  profilepic = "img/avatar.png"
-
-  # Title/subtitle for the sidebar
-  title = "ANDRES SANCHEZ GARCIA"
-  subtitle = "DEVOPS"
-
-    # Social buttons for sidebar
-  	# Each of these are optional
-  	[[params.socialbuttons]]
-  	faicon = "github"
-  	url = "https://github.com/asg1612"
-  	[[params.socialbuttons]]
-  	faicon = "twitter"
-  	url = "https://twitter.com/asg1612"
-  	[[params.socialbuttons]]
-  	faicon = "linkedin"
-  	url = "https://linkedin.com/in/asg1612"
-
-
-  	# Nav links below the profile picture
-  	[[params.navlinks]]
-  	name = "About"
-  	url = "about/"
-
-  	[[params.navlinks]]
-  	name = "Blog"
-  	url = "posts/"
-
-  	[[params.navlinks]]
-  	name = "Tutoriales"
-  	url = "tutorial/"
+[[menu.main]]
+	name = "blog"
+	weight = 100
+	url = "blog"
+[[menu.main]]
+  name = "about"
+  weight = 200
+  url = "/about/"
+[[menu.main]]
+  name = "coderag"
+  weight = 300
+  url = "/coderag/"
