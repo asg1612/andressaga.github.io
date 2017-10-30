@@ -2,8 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://andressaga.es/posts/infraestructura-como-codigo/</loc>
+    <loc>http://andressaga.es/about/sobre-mi/</loc>
+    <lastmod>2017-10-24T14:23:21+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andressaga.es/blog/infraestructura-como-codigo/</loc>
     <lastmod>2017-10-19T08:32:26+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://andressaga.es/about/</loc>
+    <lastmod>2017-10-24T14:23:21+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://andressaga.es/blog/</loc>
+    <lastmod>2017-10-19T08:32:26+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,13 +30,7 @@
   
   <url>
     <loc>http://andressaga.es/</loc>
-    <lastmod>2017-10-19T08:32:26+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://andressaga.es/posts/</loc>
-    <lastmod>2017-10-19T08:32:26+02:00</lastmod>
+    <lastmod>2017-10-24T14:23:21+02:00</lastmod>
     <priority>0</priority>
   </url>
   
