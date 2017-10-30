@@ -5,7 +5,7 @@ title = "Otro blog mas"
 theme = "hugo-goa"
 
 publishDir = "docs"
-googleAnalytics = "52491226"
+googleAnalytics = "UA-52491226-1"
 
 
 [params]
@@ -33,7 +33,3 @@ googleAnalytics = "52491226"
   name = "about"
   weight = 200
   url = "/about/"
-[[menu.main]]
-  name = "coderag"
-  weight = 300
-  url = "/coderag/"
